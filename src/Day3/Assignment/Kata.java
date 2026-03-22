@@ -38,9 +38,15 @@ public class Kata {
     }
 
     public static boolean isPalindrome(int n) {
-        String s = String.valueOf(n);
-        String reversed = new StringBuilder(s).reverse().toString();
-        return s.equals(reversed);
+        String text = String.valueOf(n);
+
+        for (int i = 0; i < text.length() / 2; i++) {
+            if (text.charAt(i) != text.charAt(text.length() - 1 - i)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public static long factorialOf(int n) {
