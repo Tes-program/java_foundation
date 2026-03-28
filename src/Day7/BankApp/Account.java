@@ -14,7 +14,7 @@ public class Account {
     private String pin;
 
 
-    Account(String name, String pin, int number) {
+    public Account(String name, String pin, int number) {
         this.name = name;
          this.pin = pin;
          this.number = number;
@@ -22,7 +22,7 @@ public class Account {
     }
 
     public void deposit(BigDecimal amount) {
-        if (amount.compareTo(BigDecimal.ZERO) > 0) {
+        if (amount.compareTo(BigDecimal.ZERO) <= 0) {
             throw new InvalidAmountException("Amount must be greater than zero");
         }
         balance = this.balance.add(amount);
