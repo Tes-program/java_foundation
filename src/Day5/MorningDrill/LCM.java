@@ -1,31 +1,38 @@
 package Day5.MorningDrill;
-import Day3.Assignment.Kata;
+
 
 public class LCM {
 
-    public static int factorizeNumber(int number) {
-        int factor = 1;
-        for (int divisor = 2; divisor <= number; divisor++) {
-            while (number % divisor == 0) {
-                factor *= divisor;
-                number /= divisor;
+    public static int lcm(int[] arr) {
+
+        int max = arr[0];
+        for (int num : arr) {
+            if (num > max) {
+                max = num;
             }
         }
-        return factor;
-    }
-    public static int[] lcm(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = factorizeNumber(arr[i]);
+
+        int candidate = max;
+        while (true) {
+            boolean isDivisibleByAll = true;
+
+            for (int num : arr) {
+                if (candidate % num != 0) {
+                    isDivisibleByAll = false;
+                    break;
+                }
+            }
+
+            if (isDivisibleByAll) {
+                return candidate;
+            }
+
+            candidate += max;
         }
-        return arr;
     }
 
     public static void main(String[] args) {
         int[] arr = {2, 4, 6, 8, 10};
-        int[] result = lcm(arr);
-        for (int num : result) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
+        System.out.println("LCM: " + lcm(arr));
     }
 }
