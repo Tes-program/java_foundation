@@ -3,7 +3,7 @@ package Day5;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import Day5.Assignment.Bike;
+import Week2.Day5.Assignment.Bike;
 
 public class BikeTest {
 

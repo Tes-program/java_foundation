@@ -1,6 +1,6 @@
 package MorningDrill;
 
-import Day5.MorningDrill.LCM;
+import Week2.Day5.MorningDrill.LCM;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

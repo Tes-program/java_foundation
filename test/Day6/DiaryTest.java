@@ -1,5 +1,7 @@
 package Day6;
 
+import Week2.Day6.Diary;
+import Week2.Day6.MyString;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
 package Assignment;
 
-import Day3.Assignment.LogisticsService;
+import Week1.Day3.Assignment.LogisticsService;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

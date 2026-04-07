@@ -1,6 +1,6 @@
 package Day5;
 
-import Day5.Assignment.AirConditioner;
+import Week2.Day5.Assignment.AirConditioner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

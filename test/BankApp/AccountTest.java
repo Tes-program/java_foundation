@@ -1,9 +1,9 @@
 package BankApp;
 
-import Day7.BankApp.Account;
-import Day7.BankApp.exceptions.InsufficientFundsException;
-import Day7.BankApp.exceptions.InvalidAmountException;
-import Day7.BankApp.exceptions.InvalidPinException;
+import Week2.Day7.BankApp.Account;
+import Week2.Day7.BankApp.exceptions.InsufficientFundsException;
+import Week2.Day7.BankApp.exceptions.InvalidAmountException;
+import Week2.Day7.BankApp.exceptions.InvalidPinException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;

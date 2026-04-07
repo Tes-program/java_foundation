@@ -1,6 +1,6 @@
 package dsa;
 
-import Day3.dsa.Stack;
+import Week1.Day3.dsa.Stack;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
